@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>canvas绘制五角星</title>
+</head>
+<body>
+    
+    <canvas width="500" height="500"></canvas>
+    <canvas width="500" height="500"></canvas>
+    <script>
+       var myCanvas = document.querySelectorAll("canvas");
+       var ctx = myCanvas[0].getContext("2d");
+           ctx.fillStyle = "red";
+           ctx.moveTo(100,200);
+           ctx.lineTo(400,200);
+           ctx.lineTo(150,450);
+           ctx.lineTo(250,50);
+           ctx.lineTo(350,450);
+           ctx.closePath();
+           ctx.stroke();
+
+           var ctx1 = myCanvas[1].getContext("2d");
+           ctx1.fillStyle = "red";
+           ctx1.moveTo(100,200);
+           ctx1.lineTo(400,200);
+           ctx1.lineTo(150,450);
+           ctx1.lineTo(250,50);
+           ctx1.lineTo(350,450);
+           ctx1.closePath();
+           ctx1.fill();
+    </script>
+
+</body>
+</html>
