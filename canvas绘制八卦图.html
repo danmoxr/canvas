@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>canvas绘制八卦图</title>
+    <style>
+        *{background-color: blue;}
+    </style>
+</head>
+<body>
+    
+    <canvas width="500" height="500"></canvas>
+    <script>
+       var myCanvas = document.querySelectorAll("canvas");
+       var ctx = myCanvas[0].getContext("2d");
+
+        ctx.fillStyle = "black";
+        ctx.arc(200,200,100,1.5*Math.PI,0.5*Math.PI,false);
+        ctx.fill();
+        ctx.fillStyle = "aliceblue"
+        ctx.beginPath();
+        ctx.arc(200,200,100,0.5*Math.PI,1.5*Math.PI,false);
+        ctx.fill();
+        ctx.fillStyle = "aliceblue";
+        ctx.arc(200,150,50,1.5*Math.PI,0.5*Math.PI,false);
+        ctx.fill();
+        ctx.fillStyle = "black";
+        ctx.beginPath();
+        ctx.arc(200,250,50,0.5*Math.PI,1.5*Math.PI,false);
+        ctx.fill();
+        ctx.beginPath();
+        ctx.arc(200,250,10,0,2*Math.PI,false);
+        ctx.fill();
+        ctx.fillStyle = "black";
+        ctx.beginPath();
+        ctx.arc(200,150,10,0,2*Math.PI,false);
+        ctx.fill();
+        ctx.fillStyle = "aliceblue";
+        ctx.beginPath();
+        ctx.arc(200,250,10,0,2*Math.PI,false);
+        ctx.fill();
+    </script>
+</body>
+</html>
