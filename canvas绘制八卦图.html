@@ -16,28 +16,30 @@
        var myCanvas = document.querySelectorAll("canvas");
        var ctx = myCanvas[0].getContext("2d");
 
-        ctx.fillStyle = "black";
+        ctx.fillStyle = "black";//大的黑色半圆
         ctx.arc(200,200,100,1.5*Math.PI,0.5*Math.PI,false);
         ctx.fill();
-        ctx.fillStyle = "aliceblue"
+
+        ctx.fillStyle = "aliceblue"//大的白色半圆
         ctx.beginPath();
         ctx.arc(200,200,100,0.5*Math.PI,1.5*Math.PI,false);
         ctx.fill();
-        ctx.fillStyle = "aliceblue";
+
+        ctx.fillStyle = "aliceblue";//小的白色半圆
         ctx.arc(200,150,50,1.5*Math.PI,0.5*Math.PI,false);
         ctx.fill();
-        ctx.fillStyle = "black";
+
+        ctx.fillStyle = "black";//小的黑色半圆
         ctx.beginPath();
         ctx.arc(200,250,50,0.5*Math.PI,1.5*Math.PI,false);
         ctx.fill();
-        ctx.beginPath();
-        ctx.arc(200,250,10,0,2*Math.PI,false);
-        ctx.fill();
-        ctx.fillStyle = "black";
+
+        ctx.fillStyle = "black";//最小的黑色圆形
         ctx.beginPath();
         ctx.arc(200,150,10,0,2*Math.PI,false);
         ctx.fill();
-        ctx.fillStyle = "aliceblue";
+
+        ctx.fillStyle = "aliceblue";//最小的白色园形
         ctx.beginPath();
         ctx.arc(200,250,10,0,2*Math.PI,false);
         ctx.fill();
